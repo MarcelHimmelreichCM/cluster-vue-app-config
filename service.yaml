@@ -4,7 +4,7 @@ metadata:
   name: vue-app
   namespace: app
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
   - port: 80
     targetPort: 80
