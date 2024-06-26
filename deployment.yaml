@@ -4,7 +4,7 @@ metadata:
   name: vue-app
   namespace: app
 spec:
-  replicas: 4
+  replicas: 3
   selector:
     matchLabels:
       app: vue-app
