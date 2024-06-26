@@ -7,7 +7,7 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: vue-app.yourdomain.com
+  - host: vue-app.test-cluster.com
     http:
       paths:
       - path: /
