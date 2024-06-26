@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: vue-app
-        image: ghcr.io/marcelhimmelreichcm/cluster-vue-app/vue-app:737949ef26e8f2a948d0cf0f4d1e26021275abf0-8
+        image: ghcr.io/marcelhimmelreichcm/cluster-vue-app/vue-app:ffd8fd447d1925311e5a73c0ea42c3d2d3c12242-9
         ports:
         - containerPort: 80
