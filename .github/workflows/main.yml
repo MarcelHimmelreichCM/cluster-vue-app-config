@@ -1,4 +1,4 @@
-name: Update Image Tag
+name: Update Image Tag after Build
 
 on:
   repository_dispatch:
