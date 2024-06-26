@@ -1,0 +1,22 @@
+name: Update Image Tag
+
+on:
+  repository_dispatch:
+    types: [update-image]
+
+jobs:
+  update-image-tag:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Update image tag
+        run: |
+          NEW_TAG="${{ github.event.client_payload.tag }}"
+          # Update the image tag in your configuration files
+          sed -i "s|image:.*|image: $NEW_TAG|" deployment.yaml
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git commit -am "Update image tag to $NEW_TAG"
+          git push
