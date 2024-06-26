@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: vue-app
-        image: yourdockerhubusername/vue-app:latest
+        image: ghcr.io/marcelhimmelreichcm/cluster-vue-app/vue-app:latest
         ports:
         - containerPort: 80
